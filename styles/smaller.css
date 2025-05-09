@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003087;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 50px;
+}
+
+header span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav {
+    background-color: #0055a5;
+}
+
+#menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#nav-menu.active {
+    display: block;
+}
+
+#nav-menu li {
+    border-bottom: 1px solid #003087;
+}
+
+#nav-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav-menu a:hover {
+    background-color: #003087;
+}
+
+#nav-menu a.active {
+    background-color: #003087;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #003087;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#filter-buttons {
+    margin-bottom: 1rem;
+}
+
+#filter-buttons button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    background-color: #0055a5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filter-buttons button:hover {
+    background-color: #003087;
+}
+
+#course-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.course-card {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.course-card.completed {
+    background-color: #e6f0fa;
+    border-color: #003087;
+}
+
+footer {
+    background-color: #003087;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}

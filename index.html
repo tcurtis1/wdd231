@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page for Tony Curtis - Web Frontend Development I at BYU-Idaho">
+    <meta name="author" content="Tony Curtis">
+    <title>WDD 231 - Tony Curtis</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile-photo.jpg" alt="Tony Curtis Profile Photo" width="50" height="50">
+        <span>Tony Curtis</span>
+        <img src="images/byui-logo.png" alt="BYU-Idaho Logo" width="100" height="50">
+    </header>
+    <nav>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <ul id="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+            <li><a href="https://tcurtis1.github.io/wdd231/">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/yourlinkedinprofile">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello, I’m Tony Curtis, an engineering director with over 20 years of experience in software development and leadership. I’m currently pursuing Web Frontend Development I at BYU-Idaho to enhance my skills.</p>
+        </section>
+        <section>
+            <h2>WDD 231 Course Progress</h2>
+            <p>Links to my weekly assignments:</p>
+            <ul>
+                <li><a href="w1.html">Week 1</a></li>
+                <li><a href="w2.html">Week 2</a></li>
+                <li><a href="w3.html">Week 3</a></li>
+                <li><a href="w4.html">Week 4</a></li>
+                <li><a href="w5.html">Week 5</a></li>
+                <li><a href="w6.html">Week 6</a></li>
+                <li><a href="w7.html">Week 7</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Certificate: Web and Computer Programming</h2>
+            <div id="filter-buttons">
+                <button id="all-courses">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+            </div>
+            <div id="course-list"></div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Tony Curtis - Utah, USA</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
+</body>
+</html>
