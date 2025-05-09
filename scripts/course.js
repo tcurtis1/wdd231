@@ -2,7 +2,7 @@ const courses = [
     { subject: 'WDD', number: '130', title: 'Web Fundamentals', credits: 2, completed: true },
     { subject: 'WDD', number: '230', title: 'Web Frontend Development I', credits: 3, completed: true },
     { subject: 'CSE', number: '110', title: 'Programming Building Blocks', credits: 2, completed: false },
-    { subject: 'CSE', number: '111', title: 'Programming with Functions', credits: 2, completed: false },
+    { subject: 'CSE', number: '111', title: 'Programming with Functions', credits: 2, completed: true },
     // Add more courses as needed
 ];
 
