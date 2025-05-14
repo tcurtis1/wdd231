@@ -19,4 +19,23 @@
     #course-list {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+    .tiles-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #location,
+    #course-work {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #location {
+        margin-right: 0.5rem;
+    }
+
+    #course-work {
+        margin-left: 0.5rem;
+    }
 }
