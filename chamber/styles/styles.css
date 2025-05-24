@@ -69,7 +69,7 @@ main h1 {
 
 .hero {
     position: relative;
-    background-image: url('../images/Timbuktu-hero.jpg');
+    background-image: url('../images/timbuktu-hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
