@@ -1,0 +1,39 @@
+import { initNav } from './nav.js';
+import { initFooter } from './footer.js';
+import { fetchMembers, displayMembers, initViewToggle } from './members.js';
+import { displaySpotlights } from './spotlights.js';
+import { fetchEvents } from './events.js';
+import { fetchWeather } from './weather.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Always initialize navigation and footer
+    initNav();
+    initFooter();
+
+    // Determine the current page based on URL or a page identifier
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    if (currentPage === 'index.html' || currentPage === '') {
+        // Index page: Load events, weather, spotlights
+        fetchMembers().then(members => {
+            if (members && document.getElementById('spotlight-list')) {
+                displaySpotlights(members);
+            }
+        });
+        if (document.getElementById('event-list')) {
+            fetchEvents();
+        }
+        if (document.getElementById('weather-info')) {
+            fetchWeather();
+        }
+    } else if (currentPage === 'directory.html') {
+        // Directory page: Load members and view toggle
+        fetchMembers().then(members => {
+            if (members && document.getElementById('member-directory')) {
+                displayMembers(members, 'grid');
+                initViewToggle();
+            }
+        });
+    }
+    // Join and Contact pages only need nav and footer, already handled above
+});

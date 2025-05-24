@@ -1,14 +1,12 @@
-
 :root {
     --primary-color: #0f3d2d; 
     --nav-background: #235146; 
     --nav-hover: #3C8B78; 
-    --secondary-color: #f4a261; 
+    --secondary-color: #e8822e; 
     --background-color: #f9f9f9; 
     --text-color: #333;
     --card-background: #fff; 
 }
-
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
@@ -26,6 +24,7 @@ nav {
 }
 
 .header-content {
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 1rem;
     display: flex;
@@ -43,14 +42,21 @@ nav {
 h1 {
     font-size: 1.5rem;
     margin: 0;
-    font-weight: 700; 
-    color: var(--secondary-color) 
+    font-weight: 700;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .site-name {
     font-size: 1.5rem;
     font-weight: 700;
-    color: white;
+    color: var(--secondary-color);
 }
 
 main h1 {
@@ -61,13 +67,166 @@ main h1 {
 }
 
 
-
-
-.logo, .social-links img, .member-logo {
-    display: block;
-    object-fit: contain; 
+.hero {
+    position: relative;
+    background-image: url('../images/Timbuktu-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 5px;
 }
 
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--nav-hover);
+}
+
+
+.events {
+    margin: 1rem;
+}
+
+.events h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.event-card, .spotlight-card {
+    min-height: 200px;
+    width: 100%;
+  }
+
+.event-card {
+    background: var(--card-background);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.event-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.event-card p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+
+.weather {
+    margin: 1rem;
+    text-align: center;
+}
+
+.weather h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+#weather-info {
+    background: var(--card-background);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+
+#event-list, #spotlight-list {
+    min-height: 300px; /* Adjust based on typical content height */
+  }
+  #weather-info {
+    min-height: 100px;
+  }
+
+.spotlights {
+    margin: 1rem;
+}
+
+.spotlights h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#spotlight-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background: var(--card-background);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.spotlight-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.spotlight-card p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.spotlight-card a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.logo, .social-links img, .member-logo {
+    display:inline-flex;
+    object-fit: contain; 
+}
 
 nav {
     background-color: var(--nav-background);
@@ -110,9 +269,8 @@ nav a.active {
     color: white;
     padding: 1rem;
     width: 100%;
-    text-align: left;
+    text-align: right;
 }
-
 
 .view-toggle {
     margin: 1rem;
@@ -132,10 +290,10 @@ nav a.active {
 .view-toggle button.active {
     background-color: var(--secondary-color);
 }
-#member-directory {
-    min-height: 400px; /* Reserve space for at least a few cards */
-}
 
+#member-directory {
+    min-height: 400px;
+}
 
 #member-directory.grid-view {
     display: grid;
@@ -151,7 +309,7 @@ nav a.active {
 }
 
 .member-logo {
-    max-width: 50px;
+    max-width: 100px;
     height: auto;
     margin: 0 auto 0.5rem;
     display: block;
@@ -159,7 +317,7 @@ nav a.active {
 
 .member-card, .member-list-item {
     position: relative;
-    min-height: 200px; /* Reserve space for each card */
+    min-height: 200px;
 }
 
 .member-card {
@@ -193,7 +351,7 @@ nav a.active {
     border-radius: 5px;
 }
 
-/* Footer */
+
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -245,10 +403,49 @@ footer {
     .developer-info {
         text-align: right;
     }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .events h2, .weather h2, .spotlights h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        height: 350px; /*tablet consideration */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 320px) {
-    #member-directory.grid-view {
+    .hero {
+        height: 200px; 
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    #event-list, #spotlight-list, #member-directory.grid-view {
         grid-template-columns: 1fr;
     }
 }

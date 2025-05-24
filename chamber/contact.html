@@ -7,7 +7,7 @@
     <meta name="author" content="Tony Curtis">
     <title>Timbuktu Chamber of Commerce | Contact</title>
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.ico">
    
     <meta property="og:title" content="Contact the Timbuktu Chamber of Commerce">
     <meta property="og:description" content="Get in touch with the Timbuktu Chamber of Commerce for inquiries and support">
@@ -18,9 +18,10 @@
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- the display=swap might be causing font size to look different on index.html vs the other pages -- need to see if i still need this to get the performance down above 94-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    
+    <!-- commebt \\\-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 
@@ -29,22 +30,21 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="images/logo.png" alt="Timbuktu Chamber of Commerce Logo" class="logo" width="80" height="80">
-            <h1>Timbuktu Chamber of Commerce</h1>
+            <img src="images/chamber-logo.jpg" alt="Timbuktu Chamber of Commerce Logo" class="logo" width="80" height="80">
+            <span class="site-name">Timbuktu Chamber of Commerce</span>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
         </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul id="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
+    <main class="container">
         <section class="contact-section">
             <h2>Contact Us</h2>
             <p>Have questions or need support? Reach out to the Timbuktu Chamber of Commerce using the form below or our contact details in the footer.</p>
@@ -74,6 +74,6 @@
         </div>
     </footer>
 
-    <script src="scripts/tile.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

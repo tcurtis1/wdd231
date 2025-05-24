@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  main {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  figure {
+    margin: 20px 0;
+  }
+  
+  #weather-icon {
+    width: 80px; /* Adjust icon size */
+    height: 80px;
+  }
+  
+  figcaption {
+    font-style: italic;
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
