@@ -132,7 +132,6 @@ function displayCourseDetails(course) {
 
     });
 
-
 }
 document.getElementById('all-courses').addEventListener('click', () => displayCourses('all'));
 document.getElementById('wdd-courses').addEventListener('click', () => displayCourses('wdd'));
