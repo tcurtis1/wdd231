@@ -1,5 +1,3 @@
-
-
 const courses = [
     {
         subject: 'CSE',
@@ -80,62 +78,98 @@ const courses = [
     }
 ]
 
-const courseList = document.getElementById('course-list');
-const totalCreditsSpan = document.getElementById('total-credits');
-const courseDetails = document.getElementById('course-details');
+document.addEventListener('DOMContentLoaded', () => {
+    const courseList = document.getElementById('course-list');
+    const totalCreditsSpan = document.getElementById('total-credits');
+    const courseDetails = document.getElementById('course-details');
 
-function displayCourses(filter = 'all') {
-    courseList.innerHTML = '';
-    let filteredCourses = courses;
+    function displayCourses(filter = 'all') {
+        courseList.innerHTML = '';
+        let filteredCourses = courses;
 
-    if (filter === 'wdd') {
-        filteredCourses = courses.filter(course => course.subject === 'WDD');
-    } else if (filter === 'cse') {
-        filteredCourses = courses.filter(course => course.subject === 'CSE');
+        if (filter === 'wdd') {
+            filteredCourses = courses.filter(course => course.subject === 'WDD');
+        } else if (filter === 'cse') {
+            filteredCourses = courses.filter(course => course.subject === 'CSE');
+        }
+
+        filteredCourses.forEach(course => {
+            const card = document.createElement('div');
+            card.classList.add('course-card');
+            if (course.completed) card.classList.add('completed');
+            card.innerHTML = `
+                <h3>${course.subject} ${course.number}</h3>
+                <p>${course.title}</p>
+                <p>Credits: ${course.credits}</p>
+            `;
+            card.addEventListener('click', () => {
+                console.log(`Card clicked: ${course.subject} ${course.number}`);
+                displayCourseDetails(course);
+            });
+            courseList.appendChild(card);
+        });
+
+        const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+        totalCreditsSpan.textContent = totalCredits;
     }
 
-    filteredCourses.forEach(course => {
-        const card = document.createElement('div');
-        //console.log(`card = : ${card.innerHTML}`); 
-        card.classList.add('course-card');
-        if (course.completed) card.classList.add('completed');
-        card.innerHTML = `
-            <h3>${course.subject} ${course.number}</h3>
-            <p>${course.title}</p>
-            <p>Credits: ${course.credits}</p>
+    function displayCourseDetails(course) {
+        // Reset the dialog state
+        courseDetails.innerHTML = '';
+        courseDetails.removeAttribute('open');
+        courseDetails.style.display = '';
+
+        // Populate the dialog
+        courseDetails.innerHTML = `
+            <button id="closeModal">X</button>
+            <h2>${course.subject} ${course.number}</h2>
+            <h3>${course.title}</h3>
+            <p><strong>Credits</strong>: ${course.credits}</p>
+            <p><strong>Certificate</strong>: ${course.certificate}</p>
+            <p>${course.description}</p>
+            <p><strong>Technologies</strong>: ${
+                Array.isArray(course.technology) ? course.technology.join(', ') : 'N/A'
+            }</p>
         `;
-        //console.log(`card = : ${card.innerHTML}`);
-        card.addEventListener('click', () => displayCourseDetails(course));
-        courseList.appendChild(card);
+
+        
+        courseDetails.showModal();
+
+        
+        const closeModal = document.getElementById('closeModal');
+        closeModal.addEventListener("click", () => {
+            console.log('Close button clicked');
+            courseDetails.close();
+        }, { once: true });
+
+        courseDetails.addEventListener('close', () => {
+            console.log('Dialog closed');
+            courseDetails.innerHTML = '';
+            courseDetails.removeAttribute('open');
+            courseDetails.style.display = 'none';
+            void courseDetails.offsetWidth;
+        }, { once: true });
+
+        courseDetails.addEventListener('click', (event) => {
+            if (event.target === courseDetails) {
+                console.log('Backdrop clicked, closing dialog');
+                courseDetails.close();
+            }
+        }, { once: true });
+    }
+
+    document.getElementById('all-courses').addEventListener('click', () => {
+        console.log('All Courses button clicked');
+        displayCourses('all');
+    });
+    document.getElementById('wdd-courses').addEventListener('click', () => {
+        console.log('WDD Courses button clicked');
+        displayCourses('wdd');
+    });
+    document.getElementById('cse-courses').addEventListener('click', () => {
+        console.log('CSE Courses button clicked');
+        displayCourses('cse');
     });
 
-    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
-    totalCreditsSpan.textContent = totalCredits;
-}
-
-function displayCourseDetails(course) {
-    
-    courseDetails.innerHTML = '';
-    courseDetails.innerHTML = `
-        <button id="closeModal">X</button>
-        <h2>${course.subject} ${course.number}</h2>
-        <h3>${course.title}</h3>
-        <p><strong>Credits</strong>: ${course.credits}</p>
-        <p><strong>Certificate</strong>: ${course.certificate}</p>
-        <p>${course.description}</p>
-        <p><strong>Technologies<strong>: ${course.technology.join(', ')}</p>
-        `;
-    const closeModal = document.getElementById('closeModal');
-    courseDetails.showModal();
-    closeModal.addEventListener("click", () => {
-        courseDetails.close();
-
-    });
-
-}
-document.getElementById('all-courses').addEventListener('click', () => displayCourses('all'));
-document.getElementById('wdd-courses').addEventListener('click', () => displayCourses('wdd'));
-document.getElementById('cse-courses').addEventListener('click', () => displayCourses('cse'));
-document.getElementById('course-details').addEventListener('click', () => displayCourseDetails(courses));
-
-displayCourses();
+    displayCourses();
+});
