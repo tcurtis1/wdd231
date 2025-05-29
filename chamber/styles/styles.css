@@ -29,7 +29,7 @@ nav {
     padding: 1rem;
     display: flex;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--card-background);
     color: white;
 }
 
