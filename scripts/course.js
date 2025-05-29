@@ -82,6 +82,7 @@ const courses = [
 
 const courseList = document.getElementById('course-list');
 const totalCreditsSpan = document.getElementById('total-credits');
+const courseDetails = document.getElementById('course-details');
 
 function displayCourses(filter = 'all') {
     courseList.innerHTML = '';
@@ -103,7 +104,8 @@ function displayCourses(filter = 'all') {
             <p>${course.title}</p>
             <p>Credits: ${course.credits}</p>
         `;
-        console.log(`card = : ${card.innerHTML}`);
+        //console.log(`card = : ${card.innerHTML}`);
+        card.addEventListener('click', () => displayCourseDetails(course));
         courseList.appendChild(card);
     });
 
@@ -111,8 +113,30 @@ function displayCourses(filter = 'all') {
     totalCreditsSpan.textContent = totalCredits;
 }
 
+function displayCourseDetails(course) {
+    
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">X</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies<strong>: ${course.technology.join(', ')}</p>
+        `;
+    const closeModal = document.getElementById('closeModal');
+    courseDetails.showModal();
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+
+    });
+
+
+}
 document.getElementById('all-courses').addEventListener('click', () => displayCourses('all'));
 document.getElementById('wdd-courses').addEventListener('click', () => displayCourses('wdd'));
 document.getElementById('cse-courses').addEventListener('click', () => displayCourses('cse'));
+document.getElementById('course-details').addEventListener('click', () => displayCourseDetails(courses));
 
 displayCourses();
