@@ -21,18 +21,18 @@ function displayWeather(data) {
     const weatherInfo = document.getElementById('weather-info');
     if (!weatherInfo) return;
 
-    // Get current weather (first entry in the list)
+    
     const currentTemp = Math.round(data.list[0].main.temp);
     const currentDesc = data.list[0].weather[0].description;
     const currentIcon = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png`;
 
-    // Get forecast for the next 3 days (one entry per day, around noon)
+    
     const forecast = [];
     const seenDates = new Set();
     for (const entry of data.list) {
         const date = new Date(entry.dt * 1000).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
         const hour = new Date(entry.dt * 1000).getHours();
-        // Select entries around noon (12 PM) to represent the day's weather
+        
         if (hour >= 11 && hour <= 14 && !seenDates.has(date) && forecast.length < 3) {
             forecast.push({
                 date,
