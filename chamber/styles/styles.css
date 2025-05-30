@@ -176,8 +176,24 @@ main h1 {
     font-size: 1rem;
 }
 
+
+.weather-forecast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.weather-forecast > div {
+    flex: 1;
+    min-width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 #event-list, #spotlight-list {
-    min-height: 300px; /* Adjust based on typical content height */
+    min-height: 300px; 
   }
   #weather-info {
     min-height: 100px;
