@@ -1,4 +1,10 @@
-
+.join-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: visible;
+    position: static;
+}
 
 .join-page .form-section {
     flex: 1;
@@ -8,7 +14,7 @@
     /* padding: 10px; */
 }
 
-.join-page .form-section h1 {
+.join-page main h1 {
     margin-bottom: 20px;
     color: var(--primary-color);
     font-size: 1.5rem;
@@ -20,16 +26,15 @@
     height: auto;
     overflow: visible;
     display: block;
-    margin: 0 0 20px 0; /* Ensure margin is set */
-    padding: 0; /* Reset padding */
-    border: 0; /* Reset border */
+    margin: 0 0 20px 0;
+    padding: 0;
+    border: 0;
 }
 
 .join-page form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
 }
 
 .join-page fieldset {
@@ -67,16 +72,17 @@
 
 .join-page select {
     margin-top: 5px;
-    padding: 12px; 
-    font-size: 1.2rem; 
+    padding: 12px;
+    font-size: 1.2rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: var(--card-background); 
-    color: var(--text-color); 
+    background-color: var(--card-background);
+    color: var(--text-color);
 }
+
 .join-page select option {
     font-size: 1.6rem !important;
     padding: 10px;
@@ -90,7 +96,6 @@
     margin-top: 5px;
     display: block;
 }
-
 
 .join-page input:invalid:focus {
     border-color: #d32f2f;
