@@ -8,11 +8,21 @@
     /* padding: 10px; */
 }
 
-.join-page .form-section h2 {
+.join-page .form-section h1 {
     margin-bottom: 20px;
     color: var(--primary-color);
     font-size: 1.5rem;
     text-align: center;
+    /* Override hiding properties from styles.css */
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    display: block;
+    margin: 0 0 20px 0; /* Ensure margin is set */
+    padding: 0; /* Reset padding */
+    border: 0; /* Reset border */
 }
 
 .join-page form {
