@@ -6,7 +6,7 @@
     <meta name="description" content="Timbuktu Chamber of Commerce - Supporting local businesses and economic growth in Timbuktu, Mali">
     <meta name="author" content="Tony Curtis">
     <title>Timbuktu Chamber of Commerce | Join</title>
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Timbuktu Chamber of Commerce">
     <meta property="og:description" content="Supporting local businesses and economic growth in Timbuktu, Mali">
     <meta property="og:image" content="https://tcurtis1.github.io/wdd231/chamber/images/chamber-logo.jpg">
@@ -36,42 +36,42 @@
         </nav>
     </header>
     <main>
+        <h1>Join Timbuktu Chamber of Commerce</h1>
         <section class="form-section">
-            <h1>Join the Chamber</h1>
             <form method="get" action="thankyou.html">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label>
+                    <label for="first-name">
                         First Name *
-                        <input type="text" name="first-name" title="Applicant's First Name" autocomplete="given-name" required>
+                        <input type="text" id="first-name" name="first-name" title="Applicant's First Name" autocomplete="given-name" required>
                     </label>
-                    <label>
+                    <label for="last-name">
                         Last Name *
-                        <input type="text" name="last-name" title="Applicant's Last Name" autocomplete="family-name" required>
+                        <input type="text" id="last-name" name="last-name" title="Applicant's Last Name" autocomplete="family-name" required>
                     </label>
-                    <label>
+                    <label for="org-title">
                         Organizational Title *
-                        <input type="text" name="org-title" title="Your Title in the Organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+                        <input type="text" id="org-title" name="org-title" title="Your Title in the Organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
                         <span class="error-message" id="org-title-error"></span>
                     </label>
-                    <label>
+                    <label for="email">
                         Email Address *
-                        <input type="email" name="email" title="Business Email Address" autocomplete="email" placeholder="e.g., example@domain.com" required>
+                        <input type="email" id="email" name="email" title="Business Email Address" autocomplete="email" placeholder="e.g., example@domain.com" required>
                     </label>
-                    <label>
+                    <label for="phone">
                         Mobile Phone *
-                        <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                        <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
                     </label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
-                    <label>
+                    <label for="org-name">
                         Business/Organization Name *
-                        <input type="text" name="org-name" title="Business or Organization Name" autocomplete="organization" required>
+                        <input type="text" id="org-name" name="org-name" title="Business or Organization Name" autocomplete="organization" required>
                     </label>
-                    <label>
+                    <label for="membership-level">
                         Membership Level *
-                        <select name="membership-level" title="Select Membership Level" required>
+                        <select id="membership-level" name="membership-level" title="Select Membership Level" required>
                             <option value="" disabled selected>Select a level</option>
                             <option value="np">NP Membership (Non-Profit, Free)</option>
                             <option value="bronze">Bronze Membership</option>
@@ -79,9 +79,9 @@
                             <option value="gold">Gold Membership</option>
                         </select>
                     </label>
-                    <label>
+                    <label for="org-description">
                         Business Description
-                        <textarea name="org-description" title="Business/Organization Description"></textarea>
+                        <textarea id="org-description" name="org-description" title="Business/Organization Description"></textarea>
                     </label>
                 </fieldset>
                 <input type="hidden" name="timestamp" id="timestamp">
