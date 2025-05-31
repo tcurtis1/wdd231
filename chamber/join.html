@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join the Timbuktu Chamber of Commerce to support local businesses and grow your network">
+    <meta name="description" content="Timbuktu Chamber of Commerce - Supporting local businesses and economic growth in Timbuktu, Mali">
     <meta name="author" content="Tony Curtis">
     <title>Timbuktu Chamber of Commerce | Join</title>
-
     <link rel="icon" type="image/png" href="favicon.ico">
-
     <meta property="og:title" content="Timbuktu Chamber of Commerce">
     <meta property="og:description" content="Supporting local businesses and economic growth in Timbuktu, Mali">
-    <meta property="og:image" content="images/chamber-logo.jpg">
+    <meta property="og:image" content="https://tcurtis1.github.io/wdd231/chamber/images/chamber-logo.jpg">
     <meta property="og:url" content="https://tcurtis1.github.io/wdd231/chamber/join.html">
     <meta property="og:type" content="website">
-
-   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,700&display=swap" media="print" onload="this.media='all'">
-
-    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-
-   
+    <link rel="stylesheet" href="styles/join.css">
 </head>
-<body>
+<body class="join-page">
     <header>
         <div class="header-content">
             <img src="images/chamber-logo.jpg" alt="Timbuktu Chamber of Commerce Logo" class="logo" width="80" height="80">
@@ -35,23 +28,128 @@
         </div>
         <nav>
             <ul id="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="join-section">
-            <h2>Join Our Chamber</h2>
-            <p>Become a member of the Timbuktu Chamber of Commerce and gain access to networking opportunities, business resources, and more. Fill out the form below to get started.</p>
-            
-            <p>[Join Form Placeholder]</p>
+        <section class="form-section">
+            <h2>Join the Chamber</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>
+                        First Name *
+                        <input type="text" name="first-name" title="Applicant's First Name" autocomplete="given-name" required>
+                    </label>
+                    <label>
+                        Last Name *
+                        <input type="text" name="last-name" title="Applicant's Last Name" autocomplete="family-name" required>
+                    </label>
+                    <label>
+                        Organizational Title *
+                        <input type="text" name="org-title" title="Your Title in the Organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+                        <span class="error-message" id="org-title-error"></span>
+                    </label>
+                    <label>
+                        Email Address *
+                        <input type="email" name="email" title="Business Email Address" autocomplete="email" placeholder="e.g., example@domain.com" required>
+                    </label>
+                    <label>
+                        Mobile Phone *
+                        <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>
+                        Business/Organization Name *
+                        <input type="text" name="org-name" title="Business or Organization Name" autocomplete="organization" required>
+                    </label>
+                    <label>
+                        Membership Level *
+                        <select name="membership-level" title="Select Membership Level" required>
+                            <option value="" disabled selected>Select a level</option>
+                            <option value="np">NP Membership (Non-Profit, Free)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>
+                        Business Description
+                        <textarea name="org-description" title="Business/Organization Description"></textarea>
+                    </label>
+                </fieldset>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Send" class="submit-button">
+            </form>
+        </section>
+        <section class="membership-cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <a href="#" data-modal="np-modal">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <a href="#" data-modal="bronze-modal">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <a href="#" data-modal="silver-modal">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <a href="#" data-modal="gold-modal">Learn More</a>
+            </div>
         </section>
     </main>
-
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>Access to networking events</li>
+                <li>Listing in member directory</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>All NP benefits</li>
+                <li>Discounted event tickets</li>
+                <li>Basic advertising</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Priority event registration</li>
+                <li>Enhanced advertising</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Exclusive training sessions</li>
+                <li>Homepage spotlight</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
     <footer>
         <div class="footer-content">
             <div class="contact-info">
@@ -60,7 +158,7 @@
                 <p>info@timbuktucc.org</p>
                 <p>(223) 555-2300</p>
                 <div class="social-links">
-                    <a href="https://youtube.com" target="_blank" aria-label="X"><img src="images/youtube.png" alt="YouTube" width="30" height="30"></a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30"></a>
                     <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/x.png" alt="Twitter" width="30" height="30"></a>
                     <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30"></a>
                 </div>
@@ -68,11 +166,11 @@
             <div class="developer-info">
                 <p>© <span id="current-year"></span> Timbuktu Chamber of Commerce</p>
                 <p>Tony Curtis | WDD 231 Class Project</p>
-                <p>Last Modification: <span id="last-modified"></span></p>
+                <p>Last Modified: <span id="last-modified"></span></p>
             </div>
         </div>
     </footer>
-
     <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>

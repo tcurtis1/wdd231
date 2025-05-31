@@ -1,0 +1,49 @@
+.thankyou-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.thankyou-page .confirmation {
+    max-width: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--card-background);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+.thankyou-page .confirmation h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.thankyou-page .confirmation p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.thankyou-page .confirmation dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    font-size: 1rem;
+}
+
+.thankyou-page .confirmation dt {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.thankyou-page .confirmation dd {
+    margin: 0;
+}
+
+.thankyou-page .confirmation h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Timbuktu Chamber of Commerce - Supporting local businesses and economic growth in Timbuktu, Mali">
+    <meta name="author" content="Tony Curtis">
+    <title>Timbuktu Chamber of Commerce | Thank You</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:description" content="Supporting local businesses and economic growth in Timbuktu, Mali">
+    <meta property="og:image" content="https://tcurtis1.github.io/wdd231/chamber/images/chamber-logo.jpg">
+    <meta property="og:url" content="https://tcurtis1.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+<body class="thankyou-page">
+    <header>
+        <div class="header-content">
+            <img src="images/chamber-logo.jpg" alt="Timbuktu Chamber of Commerce Logo" class="logo" width="80" height="80">
+            <span class="site-name">Timbuktu Chamber of Commerce</span>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="confirmation">
+            <h2>Application Received!</h2>
+            <p>Thank you for applying to join the Timbuktu Chamber of Commerce. We’ll review your application and contact you soon.</p>
+            <h3>Your Submitted Information:</h3>
+            <dl id="submitted-data">
+                <dt>First Name:</dt>
+                <dd id="first-name"></dd>
+                <dt>Last Name:</dt>
+                <dd id="last-name"></dd>
+                <dt>Email:</dt>
+                <dd id="email"></dd>
+                <dt>Mobile Phone:</dt>
+                <dd id="phone"></dd>
+                <dt>Business/Organization:</dt>
+                <dd id="org-name"></dd>
+                <dt>Submission Time:</dt>
+                <dd id="timestamp"></dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Timbuktu Chamber of Commerce</p>
+                <p>10 Rue De La Paix, Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30"></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/x.png" alt="Twitter" width="30" height="30"></a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30"></a>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>© <span id="current-year"></span> Timbuktu Chamber of Commerce</p>
+                <p>Tony Curtis | WDD 231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/thankyou.js"></script>
+</body>
+</html>
