@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tornado Information Hub - Learn about tornado science, safety, history, and share your experience">
+    <meta name="author" content="Tony Curtis">
+    <title>Tornado Information Hub | Major Tornadoes</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/roboto.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/major.css">
+</head>
+<body class="major-tornadoes-page">
+    <header>
+        <div class="header-content">
+            <img src="images/tornado-logo.png" alt="Tornado Information Hub Logo" class="logo" width="80" height="80">
+            <span class="site-name">Tornado Information Hub</span>
+            <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="major.html" class="active">Major Tornadoes</a></li>
+                <li><a href="visit.html">Visit Log</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Major Tornadoes in History</h1>
+        <section class="tornado-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tornado Event</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Estimated Damage</th>
+                        <th>More Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joplin Tornado</td>
+                        <td>May 22, 2011</td>
+                        <td>Joplin, Missouri, USA</td>
+                        <td>$2.8 billion</td>
+                        <td><a href="https://en.wikipedia.org/wiki/2011_Joplin_tornado" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>1999 Oklahoma Tornado Outbreak</td>
+                        <td>May 3, 1999</td>
+                        <td>Oklahoma City, Oklahoma, USA</td>
+                        <td>$1.5 billion</td>
+                        <td><a href="https://en.wikipedia.org/wiki/1999_Oklahoma_tornado_outbreak" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tri-State Tornado</td>
+                        <td>March 18, 1925</td>
+                        <td>Missouri, Illinois, Indiana, USA</td>
+                        <td>$1.4 billion (adjusted)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Tri-State_Tornado" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Tornado Information Hub</p>
+                <p>Email: info@tornadohub.org</p>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30"></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>© <span id="current-year"></span> Tornado Information Hub</p>
+                <p>Tony Curtis | WDD 231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

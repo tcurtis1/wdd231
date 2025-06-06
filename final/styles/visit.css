@@ -1,0 +1,144 @@
+.visit-log-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.visit-log-page main h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 20px 0;
+    /* Override hiding properties from styles.css */
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    display: block;
+    padding: 0;
+    border: 0;
+}
+
+.visit-log-page section {
+    margin-bottom: 30px;
+}
+
+.visit-log-page h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.visit-log-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.visit-log-page label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.visit-log-page input,
+.visit-log-page textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.visit-log-page textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.visit-log-page .error-message {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.visit-log-page input:invalid:focus {
+    border-color: #d32f2f;
+}
+
+.visit-log-page .submit-button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.visit-log-page .submit-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.visit-log-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.visit-log-page th,
+.visit-log-page td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.visit-log-page th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.visit-log-page tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .visit-log-page {
+        padding: 10px;
+    }
+
+    .visit-log-page main h1 {
+        font-size: 1.8rem;
+    }
+
+    .visit-log-page h2 {
+        font-size: 1.3rem;
+    }
+
+    .visit-log-page form {
+        padding: 15px;
+    }
+
+    .visit-log-page table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tornado Information Hub - Learn about tornado science, safety, history, and share your experience">
+    <meta name="author" content="Tony Curtis">
+    <title>Tornado Information Hub | Science</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/roboto.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/science.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/tornado-logo.png" alt="Tornado Information Hub Logo" class="logo" width="80" height="80">
+            <span class="site-name">Tornado Information Hub</span>
+            <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="science.html" class="active">Science</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="major.html">Major Tornadoes</a></li>
+                <li><a href="visit.html">Visit Log</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>The Science of Tornadoes</h1>
+        <section class="formation">
+            <h2>How Tornadoes Form</h2>
+            <p>Tornadoes form when warm, moist air collides with cold, dry air, creating instability in the atmosphere. This often occurs in thunderstorms, where wind shear (a change in wind speed or direction with height) causes the air to rotate, forming a mesocyclone. If conditions are right, a funnel cloud descends from the storm, becoming a tornado upon touching the ground.</p>
+            <img src="images/tornado-formation-diagram.jpg" alt="Diagram of Tornado Formation" class="diagram">
+        </section>
+        <section class="conditions">
+            <h2>Conditions for Tornadoes</h2>
+            <ul>
+                <li>Warm, moist air near the ground, often from the Gulf of Mexico.</li>
+                <li>Cold, dry air aloft, typically from the jet stream.</li>
+                <li>Wind shear, which creates rotation within the thunderstorm.</li>
+                <li>Atmospheric instability, leading to strong updrafts.</li>
+            </ul>
+        </section>
+        <section class="types">
+            <h2>Types of Tornadoes</h2>
+            <ul>
+                <li><strong>Rope Tornado</strong>: Thin, rope-like appearance, often in the dissipating stage.</li>
+                <li><strong>Wedge Tornado</strong>: Wide, wedge-shaped, often associated with the most destructive storms.</li>
+                <li><strong>Multi-Vortex Tornado</strong>: Contains multiple smaller vortices within the main funnel.</li>
+                <li><strong>Waterspout</strong>: A tornado over water, typically weaker than land tornadoes.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Tornado Information Hub</p>
+                <p>Email: info@tornadohub.org</p>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30"></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>© <span id="current-year"></span> Tornado Information Hub</p>
+                <p>Tony Curtis | WDD 231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

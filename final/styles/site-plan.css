@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #2E3A4A; /* Match site’s primary color */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 30px 0 15px;
+}
+
+p, ul {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Adjust nested ul to reduce excessive indentation */
+ul ul {
+    padding-left: 15px;
+    margin-bottom: 0; /* Prevent extra spacing for nested lists */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style for <code> elements */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #d32f2f; /* Slightly reddish for contrast */
+}
+
+.logo {
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+.color-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.color-swatch {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto 10px;
+    border: 1px solid #ccc;
+}
+
+.wireframe {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.wireframe-img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}

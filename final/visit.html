@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tornado Information Hub - Learn about tornado science, safety, history, and share your experience">
+    <meta name="author" content="Tony Curtis">
+    <title>Tornado Information Hub | Visit Log</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/roboto.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/visit.css">
+</head>
+<body class="visit-log-page">
+    <header>
+        <div class="header-content">
+            <img src="images/tornado-logo.png" alt="Tornado Information Hub Logo" class="logo" width="80" height="80">
+            <span class="site-name">Tornado Information Hub</span>
+            <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="major.html">Major Tornadoes</a></li>
+                <li><a href="visit.html" class="active">Visit Log</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Visit Log</h1>
+        <section class="signup-form">
+            <form id="visit-form">
+                <label for="name">
+                    Name *
+                    <input type="text" id="name" name="name" title="Your Name" autocomplete="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </label>
+                <label for="address">
+                    Address *
+                    <input type="text" id="address" name="address" title="Your Address" autocomplete="street-address" required>
+                    <span class="error-message" id="address-error"></span>
+                </label>
+                <label for="email">
+                    Email *
+                    <input type="email" id="email" name="email" title="Your Email Address" autocomplete="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </label>
+                <label for="comment">
+                    Comment
+                    <textarea id="comment" name="comment" title="Your Comment"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Log Your Visit" class="submit-button">
+            </form>
+        </section>
+        <section class="visit-log">
+            <h2>Visitor Log</h2>
+            <table id="log-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Comment</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody id="log-entries">
+                    <!-- Entries populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Tornado Information Hub</p>
+                <p>Email: info@tornadohub.org</p>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30"></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>© <span id="current-year"></span> Tornado Information Hub</p>
+                <p>Tony Curtis | WDD 231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/visit-log.js"></script>
+</body>
+</html>

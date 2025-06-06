@@ -1,0 +1,62 @@
+.major-tornadoes-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.major-tornadoes-page main h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 20px 0;
+    /* Override hiding properties from styles.css */
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    display: block;
+    padding: 0;
+    border: 0;
+}
+
+.major-tornadoes-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.major-tornadoes-page th,
+.major-tornadoes-page td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.major-tornadoes-page th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.major-tornadoes-page tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .major-tornadoes-page {
+        padding: 10px;
+    }
+
+    .major-tornadoes-page main h1 {
+        font-size: 1.8rem;
+    }
+
+    .major-tornadoes-page table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

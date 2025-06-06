@@ -1,0 +1,102 @@
+
+
+
+.discover-page .hero {
+    position: relative;
+    background-image: url('../images/timbuktu-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+.discover-page .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    /* Override hiding properties from styles.css */
+    position: static;
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    display: block;
+    padding: 0;
+    border: 0;
+}
+
+.discover-page .hero-content p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.discover-page section {
+    margin-bottom: 30px;
+}
+
+.discover-page h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.discover-page p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.discover-page .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.discover-page .highlight-card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.discover-page .highlight-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.discover-page ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.discover-page li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .discover-page {
+        padding: 10px;
+    }
+
+    .discover-page .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .discover-page .hero-content p {
+        font-size: 1rem;
+    }
+
+    .discover-page h2 {
+        font-size: 1.3rem;
+    }
+}
