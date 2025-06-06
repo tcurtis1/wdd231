@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2 {
-    color: #2E3A4A; /* Match site’s primary color */
+    color: #2E3A4A; 
     text-align: center;
 }
 
@@ -40,17 +40,17 @@ ul {
     padding-left: 20px;
 }
 
-/* Adjust nested ul to reduce excessive indentation */
+
 ul ul {
     padding-left: 15px;
-    margin-bottom: 0; /* Prevent extra spacing for nested lists */
+    margin-bottom: 0; 
 }
 
 li {
     margin-bottom: 10px;
 }
 
-/* Style for <code> elements */
+
 code {
     font-family: 'Courier New', Courier, monospace;
     background-color: #f9f9f9;
