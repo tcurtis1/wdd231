@@ -11,7 +11,7 @@
     min-width: 300px;
     max-width: 500px;
     margin: 0 auto;
-    /* padding: 10px; */
+   
 }
 
 .join-page main h1 {
@@ -19,7 +19,7 @@
     color: var(--primary-color);
     font-size: 1.5rem;
     text-align: center;
-    /* Override hiding properties from styles.css */
+   
     position: static;
     clip: auto;
     width: auto;

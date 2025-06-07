@@ -1,0 +1,58 @@
+[
+    {
+        "src": "images/orphanage.webp",
+        "alt": "Falatow Jigiyaso Orphanage",
+        "name": "Falatow Jigiyaso Orphanage",
+        "location": "Mali, Africa",
+        "description": "The orphanage offers housings for children and staff, a small medical centre, administration offices, toilet and shower blocks, a kitchen and a dining hall. Classrooms and terraces are located on the first floor for children’s activities. The blocks are arranged around a central yard in the fashion of traditional Malian and West-African architecture."
+    },
+    {
+        "src": "images/bedouin-village.webp",
+        "alt": "Dagon Village",
+        "name": "Dagon Village",
+        "location": "Dagon, Mali, Africa",
+        "description": "Dogon villages in Mali are unique due to their location on the Bandiagara Escarpment, a sandstone cliff that stretches for 150 km. These villages are built into the cliff faces, often nestled within rock caves, and are home to the Dogon people, who have a rich cultural heritage and traditional way of life."
+    },
+    {
+        "src": "images/university.webp",
+        "alt": "Islamic University of Timbuktu",
+        "name": "Islamic University of Timbuktu",
+        "location": "Timbuktu, Mali",
+        "description": "The Islamic University of Timbuktu, most famously known as the Sankoré Madrasa, was a prominent center of learning and Islamic scholarship in Timbuktu, Mali. It served as a focal point for scholars and their students, with lectures and classes held at the Sankoré Mosque."
+    },
+    {
+        "src": "images/grand-mosque.webp",
+        "alt": "The Grand Mosque de Koro",
+        "name": "The Grand Mosque de Koro",
+        "location": "Koro, Mali",
+        "description": "The Grande Mosquée de Koro (Grand Mosque of Koro) is a historical mosque in Koro, Mali, known for its distinctive architectural style. It's located on the town's main north-south route and is an example of a local style of mosque architecture."
+    },
+    {
+        "src": "images/street-market-2008.webp",
+        "alt": "Timbuktu Street Market",
+        "name": "Timbuktu Street Market",
+        "location": "Timbuktu, Mali",
+        "description": "This is a typical day in the street market in Timbuktu, Mali. Local goods are traded by the locals to sustain life and provide for their families."
+    },
+    {
+        "src": "images/niger-river.webp",
+        "alt": "River vessel at Mopti port",
+        "name": "River vessel at Mopti port on the Niger River",
+        "location": "Mopti Port Niger River, Mali",
+        "description": "Mopti Port. Mopti's port is a lively place, where boats from up and down the river unload their cargoes. You'll see slabs of salt from Timbuktu, dried fish, firewood, pottery, goats, chickens and much more. Boat building happens next to Restaurant Bar Bozo."
+    },
+    {
+        "src": "images/villager-photo.webp",
+        "alt": "Mali villager",
+        "name": "Mali villager",
+        "location": "Mali, Africa",
+        "description": "Head wraps or turbans: These are a traditional piece of clothing, worn by women of all ages, serving both functional (protection from sun and sand) and aesthetic purposes, and sometimes indicating religious or cultural affiliation."
+    },
+    {
+        "src": "images/djinguereber-mosque.webp",
+        "alt": "Djinguereber Mosque",
+        "name": "Djinguereber Mosque",
+        "location": "Timbuktu, Mali",
+        "description": "The Djinguereber Mosque is a famous learning center located in Timbuktu, Mali. It is one of three important mosques in the city and was built in 1327 during the reign of Mansa Musa, the king of the Mali Empire. The mosque is built mainly of organic earth materials, including mud and wood, with some parts reinforced with limestone."
+    }
+]

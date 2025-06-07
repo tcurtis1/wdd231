@@ -4,6 +4,7 @@ import { fetchMembers, displayMembers, initViewToggle } from './members.js';
 import { displaySpotlights } from './spotlights.js';
 import { fetchEvents } from './events.js';
 import { fetchWeather } from './weather.js';
+import { initGallery, initLastVisit } from './gallery.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Always initialize navigation and footer
@@ -34,6 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 initViewToggle();
             }
         });
+    } else if (currentPage === 'discover.html') {
+        // Discover page: Load gallery and last visit message
+        initGallery();
+        initLastVisit();
     }
-    // Join and Contact pages only need nav and footer, already handled above
+    
 });
