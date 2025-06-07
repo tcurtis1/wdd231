@@ -29,7 +29,7 @@ export function displayMembers(members, viewType) {
         if (viewType === 'grid') {
             directory.innerHTML += `
                 <div class="member-card">
-                    ${member.image ? `<img src="images/${member.image}" alt="${member.name} Logo" class="member-logo" width="100" height="100">` : ''}
+                    ${member.image ? `<img src="images/${member.image}" alt="${member.name} Logo" class="member-logo" width="100" height="100" loading="lazy">` : ''}
                     <h3>${member.name}</h3>
                     <p>${member.tagline}</p>
                     <p>${member.address}</p>
@@ -42,7 +42,7 @@ export function displayMembers(members, viewType) {
         } else {
             directory.innerHTML += `
                 <div class="member-list-item">
-                    ${member.image ? `<img src="images/${member.image}" alt="${member.name} Logo" class="member-logo" width="100" height="100">` : ''}
+                    ${member.image ? `<img src="images/${member.image}" alt="${member.name} Logo" class="member-logo" width="100" height="100" loading="lazy">` : ''}
                     <h3>${member.name}</h3>
                     <p>${member.tagline}</p>
                     <p>${member.address}</p>

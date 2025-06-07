@@ -14,7 +14,7 @@ export function displaySpotlights(members) {
         const membershipLabel = member.membershipLevel === 3 ? 'Gold' : 'Silver';
         spotlightList.innerHTML += `
             <div class="spotlight-card">
-                ${member.image ? `<img src="images/${member.image}" alt="${member.name} Logo" class="member-logo">` : ''}
+                ${member.image ? `<img src="images/${member.image}" alt="${member.name} Logo" class="member-logo" loading="lazy">` : ''}
                 <h3>${member.name}</h3>
                 <p>${member.tagline}</p>
                 <p>PHONE: ${member.phone}</p>
