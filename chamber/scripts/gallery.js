@@ -12,6 +12,7 @@ export async function initGallery() {
         data.forEach(item => {
             const card = document.createElement('div');
             card.className = 'gallery-card';
+            
             card.innerHTML = `
                 <img src="${item.src}" alt="${item.alt}" loading="lazy">
                 <h3>${item.name}</h3>
