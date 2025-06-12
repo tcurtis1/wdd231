@@ -7,15 +7,15 @@ import { fetchWeather } from './weather.js';
 import { initGallery, initLastVisit } from './gallery.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Always initialize navigation and footer
+
     initNav();
     initFooter();
 
-    // Determine the current page based on URL or a page identifier
+
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
     if (currentPage === 'index.html' || currentPage === '') {
-        // Index page: Load events, weather, spotlights
+
         fetchMembers().then(members => {
             if (members && document.getElementById('spotlight-list')) {
                 displaySpotlights(members);
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchWeather();
         }
     } else if (currentPage === 'directory.html') {
-        // Directory page: Load members and view toggle
+       
         fetchMembers().then(members => {
             if (members && document.getElementById('member-directory')) {
                 displayMembers(members, 'grid');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     } else if (currentPage === 'discover.html') {
-        // Discover page: Load gallery and last visit message
+ 
         initGallery();
         initLastVisit();
     }

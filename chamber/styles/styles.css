@@ -56,7 +56,10 @@ h1 {
 .site-name {
     font-size: 1.5rem;
     font-weight: 700;
+    /* max-width: 400px; */
     color: var(--secondary-color);
+    /* flex-shrink: 0; */
+    /* width: fit-content; */
 }
 
 main h1 {
