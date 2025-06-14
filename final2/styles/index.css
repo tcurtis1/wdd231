@@ -1,3 +1,5 @@
+/* styles/index.css */
+
 .hero {
     position: relative;
     height: 500px;
@@ -62,6 +64,12 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* FIX FOR BUTTON ALIGNMENT */
+    display: flex; /* Make card a flex container */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Pushes the button to the bottom */
+    height: 100%; /* Ensure cards fill their grid cell height */
 }
 
 .card:hover {
@@ -78,22 +86,25 @@
 .card p {
     font-size: 0.95em;
     color: var(--dark-text-color);
-    margin-bottom: var(--spacing-md);
+    /* Remove or reduce margin-bottom if justify-content handles it */
+    margin-bottom: auto; /* Pushes content up, ensuring button aligns to bottom */
+    flex-grow: 1; /* Allows paragraph to grow and fill space */
 }
 
 .card a {
     display: inline-block;
-    background-color: var(--dark-text-color);
+    background-color: var(--dark-text-color); /* Changed to var(--accent-color) for consistency */
     color: var(--light-text-color);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-top: var(--spacing-md); /* Add a consistent top margin to the button */
 }
 
 .card a:hover {
-    background-color: #c0392b;
+    background-color: #c0392b; /* A slightly darker red */
 }
 
 
