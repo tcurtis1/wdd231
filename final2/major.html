@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tornado Information Hub - Explore historical major tornado events and their significant impact.">
+    <meta name="author" content="Tony Curtis">
+    <title>Tornado Information Hub | Major Tornadoes</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Tornado Information Hub | Major Tornadoes">
+    <meta property="og:description" content="Explore historical major tornado events and their significant impact.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="YOUR_WEBSITE_LIVE_URL/major.html"> 
+    <meta property="og:image" content="YOUR_WEBSITE_LIVE_URL/images/major-tornado-banner.webp"> 
+    <meta property="og:image:alt" content="Image of a destructive tornado">
+    <meta property="og:site_name" content="Tornado Information Hub">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/major.css">
+</head>
+<body class="major-tornadoes-page">
+    <header>
+        <div class="header-content">
+            <img src="images/tornado-hero.webp" alt="Tornado Information Hub Logo" class="logo" width="80" height="80" loading="lazy">
+            <span class="site-name">Tornado Information Hub</span>
+            <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="major.html" class="active">Major Tornadoes</a></li>
+                <li><a href="visit.html">Visit Log</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section">
+            <h2>Major Tornado Events Throughout History</h2>
+            <p>This page highlights some of the most significant and destructive tornado events recorded. These storms left a lasting impact on communities and meteorological understanding.</p>
+            <table class="tornado-table">
+                <thead>
+                    <tr>
+                        <th>Tornado Name/Event</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Estimated Damages</th>
+                        <th>More Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tri-State Tornado</td>
+                        <td>March 18, 1925</td>
+                        <td>Missouri, Illinois, Indiana, USA</td>
+                        <td>$1.4 billion (adjusted)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Tri-State_Tornado" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>Natchez Tornado</td>
+                        <td>May 7, 1840</td>
+                        <td>Natchez, Mississippi, USA</td>
+                        <td>Unknown (devastating)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Natchez_Tornado" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>"The Great Natchez Tornado"</td>
+                        <td>May 7, 1840</td>
+                        <td>Mississippi River near Natchez</td>
+                        <td>Estimated $1.26 million (1840 USD)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Natchez_Tornado" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>Palm Sunday Tornado Outbreak</td>
+                        <td>April 11, 1965</td>
+                        <td>Midwest United States</td>
+                        <td>$1.7 billion (adjusted)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/1965_Palm_Sunday_tornado_outbreak" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>Super Outbreak</td>
+                        <td>April 3-4, 1974</td>
+                        <td>Eastern & Central USA, Ontario, Canada</td>
+                        <td>$600 million (1974 USD)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/1974_Super_Outbreak" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                     <tr>
+                        <td>Joplin Tornado</td>
+                        <td>May 22, 2011</td>
+                        <td>Joplin, Missouri, USA</td>
+                        <td>$2.8 billion (2011 USD)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/2011_Joplin_tornado" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>Moore, Oklahoma Tornado</td>
+                        <td>May 20, 2013</td>
+                        <td>Moore, Oklahoma, USA</td>
+                        <td>$2 billion (2013 USD)</td>
+                        <td><a href="https://en.wikipedia.org/wiki/2013_Moore_tornado" target="_blank" rel="noopener">Wikipedia</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Tornado Information Hub</p>
+                <p>Email: info@tornadohub.org</p>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30" loading="lazy"></a>
+                    <a href="https://x.com" target="_blank" aria-label="Twitter"><img src="images/x.png" alt="Twitter" width="30" height="30" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>© <span id="current-year"></span> Tornado Information Hub</p>
+                <p>Tony Curtis | WDD 231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p><a href="attributions.html">Attributions</a></p>
+                <p><a href="YOUR_VIDEO_URL" target="_blank">Video Demonstration</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js" type="module" defer></script>
+</body>
+</html>

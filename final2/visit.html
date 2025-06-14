@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tornado Information Hub - Share your experiences and read stories from others in the tornado visit log.">
+    <meta name="author" content="Tony Curtis">
+    <title>Tornado Information Hub | Visit Log</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    
+    <meta property="og:title" content="Tornado Information Hub | Visit Log">
+    <meta property="og:description" content="Share your experiences and read stories from others in the tornado visit log.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_WEBSITE_LIVE_URL/visit.html"> 
+    <meta property="og:image" content="YOUR_WEBSITE_LIVE_URL/images/visit-log-banner.webp"> 
+    <meta property="og:image:alt" content="People sharing experiences">
+    <meta property="og:site_name" content="Tornado Information Hub">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/visit.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/tornado-hero.webp" alt="Tornado Information Hub Logo" class="logo" width="80" height="80" loading="lazy">
+            <span class="site-name">Tornado Information Hub</span>
+            <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="major.html">Major Tornadoes</a></li>
+                <li><a href="visit.html" class="active">Visit Log</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content-section visit-intro">
+            <h2>Share Your Tornado Experience</h2>
+            <p>Whether you're a storm chaser, a resident impacted by a tornado, or simply visited a significant tornado site, share your story and insights here. Your contributions help build a richer understanding of these powerful natural events.</p>
+        </section>
+
+        <section class="content-section visit-form-section">
+            <h3>Log Your Visit</h3>
+            <form id="visitForm" class="visit-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date of Visit:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location Visited:</label>
+                    <input type="text" id="location" name="location" placeholder="e.g., Joplin, MO; Tornado Alley" required>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Your Experience/Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">Submit Log</button>
+            </form>
+        </section>
+
+        <section class="content-section visit-logs-display">
+            <h3>Recent Visit Logs</h3>
+            <div id="logEntries" class="log-entries-grid">
+                
+                <p id="loadingMessage" class="loading-message">Loading visit logs...</p>
+                <p id="errorMessage" class="error-message" style="display: none;">Failed to load visit logs.</p>
+            </div>
+        </section>
+    </main>
+
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalMessage"></p>
+            <div id="modalDetails"></div>
+            <button class="button modal-confirm-button">Okay</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Tornado Information Hub</p>
+                <p>Email: info@tornadohub.org</p>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30" loading="lazy"></a>
+                    <a href="https://x.com" target="_blank" aria-label="Twitter"><img src="images/x.png" alt="Twitter" width="30" height="30" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>© <span id="current-year"></span> Tornado Information Hub</p>
+                <p>Tony Curtis | WDD 231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p><a href="attributions.html">Attributions</a></p>
+                <p><a href="YOUR_VIDEO_URL" target="_blank">Video Demonstration</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js" type="module" defer></script>
+    <script src="scripts/visit.js" type="module" defer></script> 
+</body>
+</html>

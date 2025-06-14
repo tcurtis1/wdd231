@@ -1,0 +1,130 @@
+[
+    {
+        "id": "1",
+        "name": "Alex P. Keaton",
+        "email": "alex.k@example.com",
+        "date": "2023-08-10",
+        "location": "Moore, OK",
+        "comments": "Visited the recovery areas. The community spirit is truly inspiring after such devastation."
+    },
+    {
+        "id": "2",
+        "name": "Sarah Connor",
+        "email": "sarah.c@example.com",
+        "date": "2022-05-22",
+        "location": "Joplin, MO",
+        "comments": "Reflecting on the 2011 tornado. It's a stark reminder of nature's power and human resilience."
+    },
+    {
+        "id": "3",
+        "name": "Marty McFly",
+        "email": "marty.m@example.com",
+        "date": "2021-06-15",
+        "location": "El Reno, OK",
+        "comments": "Observed the landscape where the massive EF5 hit. Hard to comprehend its scale."
+    },
+    {
+        "id": "4",
+        "name": "Leia Organa",
+        "email": "leia.o@example.com",
+        "date": "2023-01-20",
+        "location": "Tri-State Tornado Path (IL)",
+        "comments": "Studying the historical impact of the 1925 Tri-State Tornado. A pivotal event in meteorology."
+    },
+    {
+        "id": "5",
+        "name": "Han Solo",
+        "email": "han.s@example.com",
+        "date": "2024-03-01",
+        "location": "Tuscaloosa, AL",
+        "comments": "Saw the signs of the 2011 tornado. The rebuilding efforts are remarkable."
+    },
+    {
+        "id": "6",
+        "name": "Hermione Granger",
+        "email": "hermione.g@example.com",
+        "date": "2022-10-05",
+        "location": "Gainesville, GA",
+        "comments": "Researched the 1936 Gainesville tornado. Learning about historic weather events is crucial."
+    },
+    {
+        "id": "7",
+        "name": "Frodo Baggins",
+        "email": "frodo.b@example.com",
+        "date": "2023-04-28",
+        "location": "Oklahoma City, OK",
+        "comments": "Visited the National Weather Center. The dedication to forecasting is inspiring."
+    },
+    {
+        "id": "8",
+        "name": "Elsa Arendelle",
+        "email": "elsa.a@example.com",
+        "date": "2021-11-11",
+        "location": "Springfield, MA",
+        "comments": "Remembering the 2011 tornado. The resilience of the community is a testament to hope."
+    },
+    {
+        "id": "9",
+        "name": "Buzz Lightyear",
+        "email": "buzz.l@example.com",
+        "date": "2024-02-07",
+        "location": "Dallas, TX",
+        "comments": "Explored urban tornado preparedness. Important for city residents."
+    },
+    {
+        "id": "10",
+        "name": "Darth Vader",
+        "email": "darth.v@example.com",
+        "date": "2022-07-19",
+        "location": "Centralia, IL",
+        "comments": "Investigating the 1948 tornado. The path of destruction was immense."
+    },
+    {
+        "id": "11",
+        "name": "Luke Skywalker",
+        "email": "luke.s@example.com",
+        "date": "2023-09-03",
+        "location": "Kansas Tornado Alley",
+        "comments": "Storm chasing in Kansas. Saw an incredible supercell, thankfully no touchdown near me."
+    },
+    {
+        "id": "12",
+        "name": "Princess Peach",
+        "email": "peach.p@example.com",
+        "date": "2021-08-01",
+        "location": "New Orleans, LA",
+        "comments": "Discussed hurricane-spawned tornadoes. A different type of threat, but just as dangerous."
+    },
+    {
+        "id": "13",
+        "name": "Mario Bros.",
+        "email": "mario.b@example.com",
+        "date": "2024-01-10",
+        "location": "Nashville, TN",
+        "comments": "Visited areas impacted by the 2020 tornado. The recovery process is ongoing and inspiring."
+    },
+    {
+        "id": "14",
+        "name": "Katniss Everdeen",
+        "email": "katniss.e@example.com",
+        "date": "2022-04-20",
+        "location": "Hackett, AR",
+        "comments": "Remembering the 1996 tornado. The resilience of rural communities is remarkable."
+    },
+    {
+        "id": "15",
+        "name": "Indiana Jones",
+        "email": "indy.j@example.com",
+        "date": "2023-06-25",
+        "location": "Greensburg, KS",
+        "comments": "Explored the site of the 2007 EF5 tornado. The town rebuilt stronger."
+    },
+    {
+        "id": "16",
+        "name": "Wonder Woman",
+        "email": "wonder.w@example.com",
+        "date": "2024-05-18",
+        "location": "Washington, IL",
+        "comments": "Visited after the 2013 tornado. Witnessing the aftermath and recovery firsthand."
+    }
+]

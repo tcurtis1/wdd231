@@ -1,0 +1,213 @@
+.visit-intro {
+    text-align: center;
+    padding-bottom: var(--spacing-md);
+}
+
+/* Form Styling */
+.visit-form-section {
+    padding: var(--spacing-md);
+}
+
+.visit-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm); 
+    max-width: 600px; 
+    margin: 0 auto;
+    background-color: var(--card-background);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: var(--spacing-xs);
+    color: var(--secondary-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group textarea {
+    padding: var(--spacing-xs);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.form-group textarea {
+    resize: vertical; 
+    min-height: 80px;
+}
+
+.visit-form button.button {
+    align-self: flex-end; 
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1.1em;
+}
+
+
+.visit-logs-display {
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.log-entries-grid {
+    display: grid;
+    gap: var(--spacing-md); 
+    grid-template-columns: 1fr; 
+}
+
+.log-entry-card {
+    background-color: var(--card-background);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 5px solid var(--primary-color); 
+}
+
+.log-entry-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.log-entry-card h4 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.2em;
+}
+
+.log-entry-card p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: var(--spacing-xs);
+}
+
+.log-entry-card p strong {
+    color: var(--primary-color);
+}
+
+.loading-message, .error-message {
+    text-align: center;
+    grid-column: 1 / -1; 
+    padding: var(--spacing-md);
+    font-style: italic;
+    color: #666;
+}
+
+.error-message {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); 
+    
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.modal.show-modal {
+    display: flex; 
+    opacity: 1; 
+}
+
+.modal-content {
+    background-color: var(--card-background);
+    margin: auto;
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    position: relative;
+    transform: translateY(-20px); 
+    transition: transform 0.3s ease;
+}
+
+.modal.show-modal .modal-content {
+    transform: translateY(0); /* Slide into place */
+}
+
+
+.modal-content h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.6em;
+}
+
+.modal-content p {
+    font-size: 1em;
+    color: var(--dark-text-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.modal-content #modalDetails {
+    background-color: var(--light-background);
+    padding: var(--spacing-sm);
+    border-radius: 5px;
+    margin-bottom: var(--spacing-md);
+    font-family: monospace; 
+    white-space: pre-wrap; 
+    font-size: 0.9em;
+}
+
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.modal-confirm-button {
+    float: right; 
+}
+
+/* Responsive adjustments for logs grid */
+@media (min-width: 600px) {
+    .log-entries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    }
+}
+
+@media (min-width: 1024px) {
+    .log-entries-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}

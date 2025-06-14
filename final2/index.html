@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tornado Information Hub - Your comprehensive resource for understanding, preparing for, and learning about tornadoes.">
+    <meta name="author" content="Tony Curtis">
+    <title>Tornado Information Hub | Home</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    
+    <meta property="og:title" content="Tornado Information Hub | Home">
+    <meta property="og:description" content="Your comprehensive resource for understanding, preparing for, and learning about tornadoes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_WEBSITE_LIVE_URL/index.html"> <!-- IMPORTANT: Replace with your actual live URL -->
+    <meta property="og:image" content="YOUR_WEBSITE_LIVE_URL/images/tornado-hero.webp"> <!-- IMPORTANT: Replace with your actual live URL to hero image -->
+    <meta property="og:image:alt" content="Tornado funnel cloud over a landscape">
+    <meta property="og:site_name" content="Tornado Information Hub">
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/tornado-hero.webp" alt="Tornado Information Hub Logo" class="logo" width="80" height="80" loading="lazy">
+            <span class="site-name">Tornado Information Hub</span>
+            <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="major.html">Major Tornadoes</a></li>
+                <li><a href="visit.html">Visit Log</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Tornado Information Hub</h1>
+                <p>Your comprehensive resource for understanding, preparing for, and learning about tornadoes.</p>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Science</h3>
+                <p>Understand the atmospheric conditions and dynamics that create tornadoes.</p>
+                <a href="science.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Safety</h3>
+                <p>Essential tips and guidelines to keep you and your loved ones safe during a tornado.</p>
+                <a href="safety.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Major Tornadoes</h3>
+                <p>Explore historical tornado events and their impact.</p>
+                <a href="major.html">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Visit Log</h3>
+                <p>Share your experience and see others’ stories.</p>
+                <a href="visit.html">Join the Log</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p>Tornado Information Hub</p>
+                <p>Email: info@tornadohub.org</p>
+                <div class="social-links">
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube" width="30" height="30" loading="lazy"></a>
+                    <a href="https://x.com" target="_blank" aria-label="Twitter"><img src="images/x.png" alt="Twitter" width="30" height="30" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="developer-info">
+                <p>© <span id="current-year"></span> Tornado Information Hub</p>
+                <p>Tony Curtis | WDD 231 Class Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                
+                <p><a href="YOUR_VIDEO_URL" target="_blank">Video Demonstration</a></p> 
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/main.js" type="module" defer></script>
+</body>
+</html>
