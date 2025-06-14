@@ -83,7 +83,7 @@
 
 .card a {
     display: inline-block;
-    background-color: var(--accent-color);
+    background-color: var(--dark-text-color);
     color: var(--light-text-color);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: 5px;
