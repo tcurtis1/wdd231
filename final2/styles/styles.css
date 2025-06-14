@@ -125,7 +125,8 @@ nav {
 
 #nav-menu a:hover,
 #nav-menu a.active {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-color: rgb(20, 80, 140);
     color: var(--light-text-color);
     border-radius: 5px; 
 }
@@ -157,6 +158,7 @@ footer {
     text-align: center;
     margin-top: var(--spacing-lg);
     box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    text-decoration-color: #f8f8f8;
 }
 
 .footer-content {
@@ -173,6 +175,17 @@ footer {
 
 .contact-info p, .developer-info p {
     margin: var(--spacing-xs) 0; 
+}
+.developer-info p a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.developer-info p a:hover {
+    color: var(--accent-color); 
+    text-decoration: underline; 
 }
 
 .social-links {
